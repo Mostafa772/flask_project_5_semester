@@ -33,7 +33,7 @@ db = SQLAlchemy()
 app = Flask(__name__)
 api = Api(app)
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
-db_string = "postgresql+psycopg2://mostafa:123@db/new-york-city-api"
+db_string = "postgresql+psycopg2://mostafa:123@postgres/new-york-city-api"
 app.config['SQLALCHEMY_DATABASE_URI'] = db_string
 en = create_engine(db_string)
 # use connect function to establish the connection
